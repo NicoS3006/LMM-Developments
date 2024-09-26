@@ -1,0 +1,186 @@
+.s-policy-banner {
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    width: 100vw;
+
+    background-color: #000;
+    color: #FFF;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-shadow: none;
+
+    z-index: 5000;
+
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+
+    text-rendering: auto;
+    -webkit-font-smoothing: auto;
+}
+
+.s-policy-banner a {
+    position: relative;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+    text-shadow: none;
+
+    text-rendering: auto;
+    -webkit-font-smoothing: auto;
+}
+
+.s-policy-banner a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.s-policy-banner a:hover:after {
+    opacity: 0;
+}
+
+@media only screen and (min-width: 500px) {
+    .s-policy-banner {
+        padding: 0;
+        height: 70px;
+    }
+}
+
+.s-policy-banner.is-visible {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.s-policy-banner.animate {
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.s-policy-banner__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.s-policy-banner__inner__text {
+    position: relative;
+    display: block;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+    .s-policy-banner__inner {
+        margin: 0 auto;
+    }
+}
+
+.s-banner-button {
+    position: relative;
+    border: none;
+    padding: 10px 14px;
+    margin-left: 40px;
+    letter-spacing: 0;
+
+    color: #000;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.s-banner-button:after {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.1s ease-in-out;
+    transition: -webkit-transform 0.1s ease-in-out;
+    -o-transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+.s-banner-button:hover:after {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.s-banner-button:focus {
+    outline: 0;
+}
+
+.s-policy-banner.s-policy-banner--white {
+    background-color: #FFF;
+    color: #000;
+}
+
+.s-policy-banner.s-policy-banner--white a {
+    color: #000;
+}
+
+.s-policy-banner.s-policy-banner--white a:after {
+    background-color: #000;
+}
+
+.s-policy-banner.s-policy-banner--white .s-banner-button {
+    color: #FFF;
+}
+
+.s-policy-banner.s-policy-banner--white .s-banner-button:after {
+    background-color: #000;
+}
