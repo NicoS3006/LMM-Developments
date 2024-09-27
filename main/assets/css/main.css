@@ -3206,13 +3206,38 @@ html strong {
   font-weight: 400;
   line-height: 1.15em;
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 415px) {
+  .s-title{
+     left: -200px;
+     top: 175px;
+  }
+}
+@media (max-width: 415px) {
+  .s-dib-mobile{
+     left: -200px;
+     top: 190px;
+  }
+}
+@media (min-width: 416px) and (max-width: 700px) {
+  .s-title{
+     left: -280px;
+     top: 175px;
+  }
+}
+@media (min-width: 416px) and (max-width: 700px) {
+  .s-dib-mobile{
+     left: -280px;
+     top: 190px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
   .s-title{
      left: -375px;
      top: 175px;
   }
 }
-@media (max-width: 1000px) {
+@media (min-width: 700px) and (max-width: 1000px) {
   .s-dib-mobile{
      left: -375px;
      top: 190px;
