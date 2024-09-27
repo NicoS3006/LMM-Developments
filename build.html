@@ -218,9 +218,36 @@
                             <div class="s-projects-overlay__primary-menu">
                               <div class="s-projects-overlay-link js-projects-overlay-link" data-index="0">
                                 <div class="s-spacer s-spacer--small"></div>
-                                <span class="s-db s-title s-title--primary-menu s-projects-overlay-link__title">Mckie Crescent </span>
+                                <div class="s-projects-overlay__mobile-project-image s-hide--lg" 
+                                    style="display: block; width: 100%; height: auto;">
+                                    <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271%27%20height%3D%271%27%20style%3D%27background%3A%23eeeeee%27%2F%3E"
+                                        data-srcset="main/imager/defaultassets/LMM/Cannon-Hill/mckie-cres-front.jpeg 3000w, main/imager/defaultassets/LMM/Ascot/ascot-front.jpeg 2000w, main/imager/defaultassets/LMM/Ascot/ascot-front.jpeg 1400w, main/imager/defaultassets/LMM/Ascot/ascot-front.jpeg 900w, main/imager/defaultassets/LMM/Ascot/ascot-front.jpeg 500w, main/imager/defaultassets/LMM/Ascot/ascot-front.jpeg 300w"
+                                        data-sizes="50vw" alt="Mckie Crescent | LMM Developments" 
+                                        class="s-img-cover lazyload"
+                                        style="width: 100%; height: auto; display: block;"/>
+                                </div>
+                                <!-- Hide on Desktop and Show on Mobile -->
+                                <style>
+                                    /* Hide the image on screens wider than 768px (desktop) */
+                                    @media screen and (min-width: 769px) {
+                                    .s-projects-overlay__mobile-project-image {
+                                        display: none !important; /* Hide image on desktop */
+                                    }
+                                    }
+                                    /* Show the image on screens 768px and below (mobile) */
+                                    @media screen and (max-width: 768px) {
+                                    .s-projects-overlay__mobile-project-image {
+                                        display: block !important; /* Show image on mobile */
+                                    }
+                                    }
+                                </style>
+                                <div class="s-abf s-project-overlay__logo">
+                                    <div class="s-db s-project-overlay-logo js-projects-mobile-menu-logo-animation"
+                                    data-json-path="main/assets/images/lottie-web/blank.json"></div>
+                                </div>
+                                <span class="s-db s-title s-title--primary-menu s-projects-overlay-link__title">Mckie Crescent</span>
                                 <span class="s-db s-title s-title--small s-projects-overlay-link__location">Cannon Hill</span>
-                              </div>
+                                </div>     
                               <div class="s-projects-overlay-link js-projects-overlay-link" data-index="1">
                                 <div class="s-projects-overlay__mobile-project-image s-hide--lg">
                                   <img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%271%27%20height%3D%271%27%20style%3D%27background%3A%23eeeeee%27%2F%3E"
